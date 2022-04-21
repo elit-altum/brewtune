@@ -22,12 +22,12 @@
     <div id="mainContainer">
       <div id="topbar">
         <div id="topleft">
-          <object type="image/svg+xml" data="assets/images/logo.svg" class="logo" height="42"></object>
+          <p style="font-size: 20px;">BrewTune</p>
         </div>
         <div id="topcenter">
           <div id="levels">
-            <button id="btnSimpleMode" class="button player active" onclick="setActiveLevel(event, false)" id="pianoBtn">Simple</button>
-            <button id="btnAdvanceMode" class="button player" onclick="setActiveLevel(event, true)">Advanced</button>
+            <button id="btnSimpleMode" class="button player active" onclick="setActiveLevel(event, false)" id="pianoBtn">About</button>
+            <button id="btnAdvanceMode" class="button player" onclick="setActiveLevel(event, true)">Record</button>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
         <div id="simple">
           <div class="box">            
             <div class="top">
-              <h1>SIMPLE MODE</h1>
+              <h1>INSTRUCTIONS</h1>
             </div>   
             <div class="middle">
               <center>
@@ -49,9 +49,11 @@
                 <hr>
                 <br>
                 <div class="instructions">
-                  <b>Hum2Song!</b> is an <b>AI-powered</b> web application that is able to <b>compose</b> the musical <b>accompaniment</b> of a <b>melody</b> produced by a human <b>voice</b>. Once the site has loaded, you only need to <b>click</b> on the "<b>Record Audio</b>" button, start <b>humming</b>/singing (<b>from 2 to 8 seconds</b>) and click on the "<b>Stop</b>" button to start the <b>conversion</b> process. <b>Google Chrome</b> in a desktop browser is recommended.
-                  <br><br>
-                  This is a <b>client-side</b> only application, this means that all the <b>files</b> are stored <b>locally</b> and the <b>processing</b> happens in your <b>browser</b>. The <b>first time</b> you load this website, it <b>downloads ~100Mb</b> in models and sounds, that <b>takes in average ~1 minute</b> depending on your internet connection. <b>Please be patient</b>.
+                  This project is built by the students of Delhi Technological University for AI Project for 6th Sem of 2022.
+                    <ol>Manan Sharma - 2K19/CO/212</ol>
+                    <ol>Kushal Karmodiya - 2K19/CO/206</ol>
+                    <ol>Ishan Sharma - 2K19/CO/169</ol>
+                    <ol>Manan Sharma - 2K19/CO/212</ol>
                   <br><br>
                 </div>
                 <hr>
@@ -93,7 +95,6 @@
                     <button class="button" id="btnLoadSimple">Edit</button>
                     <hr>
                     <br>
-                    We appreciate your feedback, you can find the contact information <a target="_blank" href="http://www.carlostoxtli.com/#hum2song">here</a>.
                     <br>
                   </div>
                 </center>
@@ -105,12 +106,8 @@
                   <div class="theme" id="theme_0"></div><div class="theme" id="theme_1"></div><div class="theme" id="theme_2"></div><div class="theme" id="theme_3"></div><div class="theme" id="theme_4"></div><div class="theme" id="theme_5"></div>
                 </div>
                 <div class="bottomSection">
-                  This work was based and inspired on <a target="_blank" href="https://magenta.tensorflow.org/oaf-js">piano-scribe</a>
-                  <br>
                   Made with &nbsp;<a target="_blank" href="http://js.tensorflow.org" class="img-link"><img src="assets/images/tensorflow.png" height="35" class="aligned"></a>&nbsp;<b>Tensorflow.js</b> &nbsp; and &nbsp;<a target="_blank" href="http://magenta.tensorflow.org/js" class="img-link">
                   <img src="assets/images/magenta.png" height="42" class="aligned"></a>&nbsp;<b>Magenta.js</b> &nbsp;.&nbsp;
-                  See the code on <a target="_blank" href="https://github.com/toxtli/hum2song">GitHub</a>. <a target="_blank" href="http://www.carlostoxtli.com/#hum2song">Contact us</a>.
-                </div>
               </center>
             </div>
           </div>
@@ -118,7 +115,7 @@
         <div id="advance">
           <div class="box">
             <div class="top">
-              <h1>ADVANCED MODE</h1>
+              <h1>RECORD AUDIO</h1>
             </div>
             <div class="middle">
               <center>
@@ -129,9 +126,9 @@
                 <hr>
                 <br>
                 <div class="instructions">
-                  <b>Hum2Song!</b> is an <b>AI-powered</b> web application that is able to <b>compose</b> the musical <b>accompaniment</b> of a <b>melody</b> produced by a human <b>voice</b>. Once the site has loaded, you only need to <b>click</b> on the "<b>Record Audio</b>" button, start <b>humming</b>/singing (<b>from 2 to 8 seconds</b>) and click on the "<b>Stop</b>" button to start the <b>conversion</b> process. <b>Google Chrome</b> in a desktop browser is recommended.
+                  <b>BrewTune</b> is an <b>AI-powered</b> web application that is able to <b>compose</b> the musical <b>accompaniment</b> of a <b>melody</b> produced by a human <b>voice</b>. 
                   <br><br>
-                  This is a <b>client-side</b> only application, this means that all the <b>files</b> are stored <b>locally</b> and the <b>processing</b> happens in your <b>browser</b>. The <b>first time</b> you load this website, it <b>downloads ~100Mb</b> in models and sounds, that <b>takes in average ~1 minute</b> depending on your internet connection. <b>Please be patient</b>.
+                  This is a <b>client-side</b> only application, this means that all the <b>files</b> are stored <b>locally</b> and the <b>processing</b> happens in your <b>browser</b>. <b>Please be patient</b>.
                   <br><br>
                 </div>
                 <hr>
@@ -224,7 +221,7 @@
                       </div>
                       <hr>
                       <span class="instructions">
-                        Step 3.- Now we use a DNN model to predict the most likely genre from the melody. You can find more information about this model <a target="_blank" href="https://medium.com/@carlostoxtli/7a777445550b">here</a>.
+                        Step 3.- Now we use a DNN model to predict the most likely genre from the melody.
                       </span>
                       <span class="results">
                         <h4>The predicted genre is:</h4>
@@ -349,7 +346,7 @@
                       </div>
                       <hr>
                       <span class="instructions">
-                        Step 14.- Finally, we create an interpolation of 6 steps between the chords adapted trio and random sequence. We use a RNN model that can be found <a target="_blank" href="https://magenta.tensorflow.org/multitrack">here</a>.
+                        Step 14.- Finally, we create an interpolation of 6 steps between the chords adapted trio and random sequence using a RNN model.
                       </span>
                       <br>
                       <br>
@@ -360,9 +357,6 @@
                         <canvas id="canvas10"></canvas>
                       </div>
                       <hr>
-                      <br>
-                      We appreciate your feedback, you can find the contact information <a target="_blank" href="http://www.carlostoxtli.com/#hum2song">here</a>.
-                      <br>
                     </div>
                   </div>
                 </center>
@@ -375,11 +369,9 @@
                   <div class="theme" id="theme_0"></div><div class="theme" id="theme_1"></div><div class="theme" id="theme_2"></div><div class="theme" id="theme_3"></div><div class="theme" id="theme_4"></div><div class="theme" id="theme_5"></div>
                 </div>
                 <div class="bottomSection">
-                  This work was based and inspired on <a target="_blank" href="https://magenta.tensorflow.org/oaf-js">piano-scribe</a>
-                  <br>
+        
                   Made with &nbsp;<a target="_blank" href="http://js.tensorflow.org" class="img-link"><img src="assets/images/tensorflow.png" height="35" class="aligned"></a>&nbsp;<b>Tensorflow.js</b> &nbsp; and &nbsp;<a target="_blank" href="http://magenta.tensorflow.org/js" class="img-link">
                   <img src="assets/images/magenta.png" height="42" class="aligned"></a>&nbsp;<b>Magenta.js</b> &nbsp;.&nbsp;
-                  See the code on <a target="_blank" href="https://github.com/toxtli/hum2song">GitHub</a>. <a target="_blank" href="http://www.carlostoxtli.com/#hum2song">Contact us</a>.
                 </div>
               </center>
             </div>

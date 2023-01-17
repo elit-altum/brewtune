@@ -20,7 +20,7 @@ let jazzHits = [51, 53, 54, 42, 59, 44, 46];
 var audioCtx = new (AudioContext || webkitAudioContext)();
 var tf;
 var z1, z2;
-var tsynth;
+var tsynth, msynth;
 var drumMap;
 var progSeqs;
 var chordSeqs;

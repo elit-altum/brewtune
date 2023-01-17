@@ -19,7 +19,7 @@ var midiDrums = [36, 38, 42, 46, 41, 43, 45, 49, 51];
 let jazzHits = [51, 53, 54, 42, 59, 44, 46];
 var audioCtx = new (AudioContext || webkitAudioContext)();
 var tf;
-var z1, z2;
+var z1, z2, z3, z4;
 var tsynth;
 var drumMap;
 var progSeqs;
